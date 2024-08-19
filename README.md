@@ -25,6 +25,7 @@ For example:- Genres and keywords are converted from a JSON-like structure to a 
 - The top 3 cast members are extracted.
         
 - The director's name is extracted from the crew.
+
 The overview column is tokenized into words.
 
 Data Preprocessing:
