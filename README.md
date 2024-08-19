@@ -21,7 +21,9 @@ Data Cleaning:- Unnecessary columns are dropped, and the dataset is filtered to 
 Feature Extraction:The genres, keywords, cast, and crew fields are processed to extract relevant information. 
 
 For example:- Genres and keywords are converted from a JSON-like structure to a list of strings.
+
             - The top 3 cast members are extracted.
+            
             - The director's name is extracted from the crew.
 The overview column is tokenized into words.
 
