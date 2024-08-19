@@ -5,17 +5,21 @@ like genres, keywords, cast, and crew. The project is implemented using a combin
 
 Dataset
 The project uses two datasets:tmdb_5000_movies.csv: Contains information about 5,000 movies including their genres, overview, etc.
+
 tmdb_5000_credits.csv: Contains details related to the cast and crew of the movies.
 These datasets are merged on the title of the movies to form a consolidated dataset for further processing.
 
 Project Workflow
 Data Loading:The datasets are loaded into Pandas DataFrames.
+
 Data Merging:The movies and credits datasets are merged on the movie title.
+
 Data Cleaning:- Unnecessary columns are dropped, and the dataset is filtered to include only relevant columns such as movie_id, title,
               overview, genres, keywords, cast, and crew.
               - Missing values are handled, and duplicates are removed.
 
 Feature Extraction:The genres, keywords, cast, and crew fields are processed to extract relevant information. 
+
 For example:- Genres and keywords are converted from a JSON-like structure to a list of strings.
             - The top 3 cast members are extracted.
             - The director's name is extracted from the crew.
